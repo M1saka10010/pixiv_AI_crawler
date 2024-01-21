@@ -23,7 +23,10 @@ conda activate pixivai
 
 安装pytorch
 ```bash
-conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch-lts -c conda-forge
+# conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch-lts -c conda-forge
+
+pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+
 # 没有N卡的用这个
 conda install pytorch torchvision torchaudio cpuonly -c pytorch-lts
 ```

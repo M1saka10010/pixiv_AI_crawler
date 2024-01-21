@@ -210,6 +210,7 @@ def main(args):
     utils.init_distributed_mode(args)
     print(args)
     device = torch.device(args.device)
+    print(device)
 
     # fix the seed for reproducibility
     seed = args.seed + utils.get_rank()

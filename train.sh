@@ -6,8 +6,8 @@ python -m torch.distributed.launch --nproc_per_node=2 main.py \
 --save_ckpt_num 100 --dist_eval False \
 --color_jitter 0.2 \
 --finetune ckpt/convnext_tiny_22k_1k_384.pth \
---data_path /dataset/dzy/anime_ds \
---eval_data_path /dataset/dzy/anime_ds \
+--data_path images \
+--eval_data_path images \
 --imset ./imset/ \
 --data_set json \
 --output_dir output/tiny6

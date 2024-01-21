@@ -6,11 +6,11 @@ from tqdm import tqdm
 from labeler import img_resize
 from collections import Counter
 
-n_test=50 # 测试集图像数量(每个类别)
-set_raw='imset/cat_7.json' # 标签路径
-img_root='pixiv_crawler/images/' # 原始图像路径
+n_test=20 # 测试集图像数量(每个类别)
+set_raw='dataset.json' # 标签路径
+img_root='images_group/' # 原始图像路径
 save_path='imset' # 划分后标签储存路径
-img_save_path='imgs/' # 处理后图像储存路径
+img_save_path='images/' # 处理后图像储存路径
 
 def check_dir(path):
     dp=os.path.dirname(path)
